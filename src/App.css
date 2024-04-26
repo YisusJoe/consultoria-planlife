@@ -294,19 +294,116 @@ footer {
   }
 }
 
-/* .Hero-img {
-  width: 50%;
-  height: 100%;
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+  body {
+    font-size: 4px;
+  }
+
+  .App-header {
+    padding: 4px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .App-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .App-header p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .Header-nav { 
+    display: none;
+  }
+
+  .App-hero {
+    /* background-color: #1E2D3B; */
+    height: calc(100vh - 80px);
+    width: 100%;
+  } 
+
+  .App-hero h1 {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .App-hero p {
+    text-align: center;
+  }
+
+  .App-hero img {
+    display: none;
+  }
+
+  .Hero-inicio {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Inicio-button {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .App-calcular {
+    text-align: center;
+    font-size: 12px;
+    /* padding: 20px 0; */
+  }
+
+  .Calcular-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%
+  }
+
+  .Calcular-output {
+    display: none;
+  }
+
+  .App-servicios {
+    font-size: 20px;
+  }
+
+  .Servicios-cards {
+    flex-wrap: wrap;
+  }
+
+  .Card h3, .Card p {
+    display: none;
+  }
+
+  .App-seccion {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Seccion-container {
+    width: 100%;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .App-localizacion h1 {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 12px;
+    text-align: center;
+  }
 }
-
-.Hero-img img {
-  width: 100%; 
-  height: calc(100%); 
-  object-fit: cover; 
-} */
-
-/* 
-.Hero-img img {
-  height: 300px;
-  border-radius: 15px;
-} */
