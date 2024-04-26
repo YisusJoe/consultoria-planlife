@@ -1,14 +1,18 @@
-
 /* .App {
   display: flex;
   flex-direction: column;
   align-items: center;
 } */
 
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
 .App-header {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
   padding: 0 2vw;
   font-size: 18px;
   font-weight: bold;
@@ -38,7 +42,9 @@
   height: 40px;
   width: auto;
   padding: 0 2vw;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  color: white;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -49,11 +55,13 @@
 
 .Nav-contacto {
   background-color: gainsboro;
-  color: #1E2D3B;
+  margin-left: 1vw;
+  border-radius: 4px;
+  color: #1E2D3B !important;
 }
 
 .Nav-contacto:hover {
-  color: gainsboro;
+  color: gainsboro !important;
 }
 
 .App-header p {
@@ -64,14 +72,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   /* padding: 48px 0; */
   /* border: 1px solid red; */
 }
 
 .App-hero img {
   height: 100%; 
-  /* animation: fadeIn 0.1s ease-in-out forwards; */
+  /* float: right;
+  animation-name: aparecerDesdeDerecha;
+  animation-duration: .8s;
+  animation-fill-mode: forwards; */
+  animation: fadeIn 0.1s ease-in-out forwards;
 }
 
 .resaltar {
@@ -109,6 +121,7 @@
   /* height: 28px; */
   width: 10vw;
   padding: 10px;
+  font-weight: bold;
   border-radius: 5px;
   color: white;
   background-color: black;
@@ -120,11 +133,163 @@
   background-color: gray;
 }
 
+.App-calcular {
+  display: flex;
+  align-items: center;
+  /* height: calc(100vh - 60px); */
+  padding: 4vw 8vw;
+  background-color: rgb(245, 245, 245);
+  /* background-color: white; */
+}
+
+.Calcular-input {
+  display: flex;
+  gap: 1vw;
+  width: 50%;
+  flex-direction: column;
+}
+
+.Calcular-input p {
+  margin: 0;
+}
+
+.Calcular-input input {
+  height: 24px;
+  width: 80%;
+}
+
+.Calcular-output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 50%;
+  color: white;
+  border-radius: 8px;
+  background-color: #9c1043;
+  /* color: #1E2D3B; */
+}
+
+.App-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  padding: 2vw 6vw;
+  /* background-color: #9c1043; */
+}
+
+.Servicios-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  width: 100%;
+  padding: 24px;
+  /* background-color: aquamarine; */
+}
+
+.Card {
+  /* height: 28vw; */
+  width: 224px;
+  padding: 24px;
+  border-radius: 12px;
+  /* text-align: justify; */
+  background-color: rgb(245, 245, 245);
+  /* border: 1px solid red; */
+}
+
+.Card img {
+  width: 100%;
+}
+
+.Card h3 {
+  padding: 14px 0;
+  font-size: 16px;
+}
+
+.Card p {
+  font-size: 14px;
+}
+
+.App-seccion {
+  display: flex;
+  height: 80vh;
+  gap: 32px; 
+  padding: 2vw 6vw;
+  font-size: 24px;
+}
+
+.Seccion-container {
+  width: 50%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  color: white;
+  border-radius: 8px;
+  background-color: #1E2D3B;
+}
+
+.App-localizacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding: 2vw 6vw;
+  /* background-color: #ED1566; */
+}
+
+.App-localizacion h1 {
+  padding: 18px 0;
+}
+
+.App-localizacion iframe {
+  border-radius: 8px;
+}
+
+footer {
+  padding: 2vw;
+  font-weight: bold;
+  color: white;
+  background-color: #ED1566;
+}
+
+/*
+.Card img {
+  width: 100%;
+}
+
+
+.Card h3, .Card p {
+  margin: 0;
+  padding: 0 24px;
+}
+
+.Card h3 {
+  padding: 14px 24px;
+} */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecerDesdeDerecha {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
 }
