@@ -16,9 +16,9 @@ function App() {
   // const logo = 'https://drive.google.com/thumbnail?id=1EvHBtDhkvyBHwHgWMIz_F71RqAtLduFw';
   // const hero = 'https://drive.google.com/thumbnail?id=1HAwpCZjFD6xjV6DXasH5SgyFBCKjBFw8';
   // const hero = 'https://drive.google.com/uc?export=view&id=1HAwpCZjFD6xjV6DXasH5SgyFBCKjBFw8';
-  const imagen1 = 'https://drive.google.com/thumbnail?id=1mCPwDEH6UOgcV3foHXVS4pZOjgB0trNZ';
-  const imagen2 = 'https://drive.google.com/thumbnail?id=10zDNc663z-Au42skgd9j1z9zvZbAyTGm';
-  const imagen3 = 'https://drive.google.com/thumbnail?id=1FNDZL4YdfRbRqk3k_klKB09B2h5O3WKj';
+  // const imagen1 = 'https://drive.google.com/thumbnail?id=1mCPwDEH6UOgcV3foHXVS4pZOjgB0trNZ';
+  // const imagen2 = 'https://drive.google.com/thumbnail?id=10zDNc663z-Au42skgd9j1z9zvZbAyTGm';
+  // const imagen3 = 'https://drive.google.com/thumbnail?id=1FNDZL4YdfRbRqk3k_klKB09B2h5O3WKj';
 
   return (
 

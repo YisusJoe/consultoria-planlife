@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 18px;
-  /* font-size: 1.3vw; */
+  /* font-size: 18px; */
+  font-size: 1.3vw;
   background-color: #FCF4FF;
 }
 
@@ -23,15 +23,18 @@ header {
   align-items: center;
   width: 1440px;
   /* padding: 0 2vw; */
-  padding: 0 38px;
-  gap: 14px;
+  padding: 0 2.6em;
+  /* gap: 14px; */
+  gap: 0.8em;
   /* margin: 0 auto; */
   /* font-size: 2vh; */
 }
 
 .Header-logo {
-  height: 42px;
-  width: 42px;
+  /* height: 42px;
+  width: 42px; */
+  height: 2.3em;
+  width: 2.3em;
 }
 
 .Header-nav {
@@ -44,7 +47,7 @@ header {
   align-items: center;
   height: 40px;
   width: auto;
-  padding: 0 2vw;
+  padding: 0 0.7em;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -72,34 +75,40 @@ header {
 .content-hero {
   display: flex;
   align-items: center;
-  gap: 64px;
+  /* gap: 64px; */
+  gap: 3em;
   width: 1440px;
-  padding: 0 122px;
+  padding: 0 5em;
 }
 
 .hero-letras {
   display: flex;
   flex-direction: column;
-  gap: 18px
+  /* gap: 18px; */
+  gap: 1em;
 }
 
 .hero-letras h1 {
-  font-size: 62px;
+  /* font-size: 62px; */
+  font-size: 3.4em;
   margin: 0;
 }
 
 .hero-letras p {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1em;
   margin: 0;
 }
 
 .hero-botones {
   display: flex;
-  gap: 12px;
+  /* gap: 12px; */
+  gap: 0.8em;
 }
 
 .App-hero img {
-  width: 540px;
+  /* width: 540px; */
+  width: 30em;
   border-radius: 18px;
 }
 
@@ -111,8 +120,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56px;
-  width: 220px;
+  /* height: 56px; */
+  height: 3em;
+  /* width: 220px; */
+  width: 12em;
   color: white;
   background-color: #0C0A09;
   border-radius: 8px;
@@ -130,8 +141,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  height: 56px;
-  width: 220px;
+  /* height: 56px; */
+  height: 3em;
+  /* width: 220px; */
+  width: 12em;
   color: black;
   background-color: #FFFFFF;
   border-radius: 8px;
@@ -144,13 +157,15 @@ header {
 }
 
 .Button-calculadora img {
-  width: 36px;
+  /* width: 36px; */
+  width: 2em;
 }
 
 .App-calculadora {
   display: flex;
   justify-content: center;
-  height: 640px;
+  /* height: 640px; */
+  height: 80vh;
   background-color: #F3D0FE;
 }
 
@@ -161,7 +176,7 @@ header {
   align-items: center;
   /* gap: 64px; */
   width: 1440px;
-  padding: 0 122px;
+  padding: 0 5em;
 }
 
 .calculadora-letras {
@@ -170,32 +185,41 @@ header {
   align-items: center;
   gap: 6px;
   font-weight: bold;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
+  padding-bottom: 1.8em;
 }
 
 .calculadora-letras h1 {
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 1.8em;
   margin: 0;
 }
 
 .calculadora-letras p {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1em;
   margin: 0;
 }
 
 .calculadora-inputs {
   display: flex;
   justify-content: center;
-  width: 900px;
+  /* width: 900px; */
+  width: 50em;
 }
 
 .calculadora-inputs input {
-  height: 40px;
-  width: 394px;
-  padding-left: 16px;
-  margin: 12px 24px;
+  /* height: 40px; */
+  height: 2em;
+  /* width: 394px; */
+  width: 22em;
+  /* padding-left: 16px; */
+  padding-left: 0.9em;
+  /* margin: 12px 24px; */
+  margin: 0.7em 1.3em;
   border-radius: 8px;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1em;
   font-weight: bold;
   border: none;
 }
@@ -207,16 +231,20 @@ header {
 
 .calculadora-botones {
   display: flex;
-  gap: 48px;
-  padding: 32px;
+  /* gap: 48px; */
+  gap: 2.6em;
+  /* padding: 32px; */
+  padding: 1.7em;
 }
 
 .calculadora-botones div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 58px;
-  width: 412px;
+  /* height: 56px; */
+  height: 3em;
+  /* width: 412px; */
+  width: 23em;
   font-weight: bold;
   color: white;
   border-radius: 8px;
@@ -243,12 +271,14 @@ header {
 .App-servicios {
   display: flex;
   justify-content: center;
-  height: 640px;
+  /* height: 640px; */
+  height: 80vh;
   background-color: #FCF4FF;
 }
 
 .App-servicios h1 { 
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 1.8em;
   margin: 0px;
 }
 
@@ -257,37 +287,45 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  /* gap: 32px; */
+  gap: 1.7em;
   width: 1440px;
-  padding: 0 122px;
+  padding: 0 5em;  
+  box-sizing: border-box;
 }
 
 .cards-servicios {
   display: flex;
-  gap: 64px;
+  /* gap: 64px; */
+  gap: 3.5em;
 }
 
 .card {
-  width: 322px;
-  height: 355px;
+  /* width: 322px; */
+  width: 18em;
+  /* height: 355px; */
+  height: 20em;
   border-radius: 8px;
 }
 
 .card img {
   width: inherit;
+  height: inherit;
   border-radius: 8px;
 }
 
 .App-agendar {
   display: flex;
   justify-content: center;
-  height: 640px;
+  /* height: 640px; */
+  height: 80vh;
   font-weight: bold;
   background-color: #F3D0FE;
 }
 
 .App-agendar h1 { 
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 2.5em;
   margin: 0px;
 }
 
@@ -295,9 +333,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  /* gap: 32px; */
+  gap: 1.7em;
   width: 1440px;
-  padding: 0 122px;
+  /* padding: 0 122px; */
+  padding: 0 6.7em;
+
 }
 
 .agendar-letras {
@@ -309,9 +350,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  height: 420px;
-  width: 546px;
+  /* gap: 24px; */
+  gap: 1.3em;
+  /* height: 420px; */
+  height: 23em;
+  /* width: 546px; */
+  width: 30em;
   padding: 0 48px;
   box-sizing: border-box;
   background-color: #FCF4FF;
@@ -319,7 +363,8 @@ header {
 }
 
 .agendar-tabla h1 {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 2em;
 }
 
 .inputs-agendar {
@@ -327,7 +372,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  /* gap: 32px; */
+  gap: 1.7em;
   width: 100%;
   font-weight: bold;
 }
@@ -335,17 +381,21 @@ header {
 .input-first {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
+  gap: 0.6em;
   width: 100%;
 }
 
 .input-first input {
-  height: 38px;
-  padding-left: 16px;
+  /* height: 38px; */
+  height: 1.8em;
+  /* padding-left: 16px; */
+  padding-left: 0.9em;
   border-radius: 8px;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1em;
   font-weight: bold;
-  border: none;
+  border: 1px solid gray;
 }
 
 .input-second {
@@ -357,32 +407,36 @@ header {
 .input-second div {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
+  gap: 0.7em;
   width: 30%;
 }
 
 .input-second input {
-  height: 38px;
-  padding-left: 16px;
+  /* height: 38px; */
+  height: 1.8em;
+  padding-left: 0.9em;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 0.9em;
   font-weight: bold;
-  border: none;
+  border: 1px solid gray;
 }
 
 .boton-agendar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56px;
+  /* height: 56px; */
+  height: 3em;
   width: 100%;
-  margin-top: 4px;
+  /* margin-top: 4px; */
+  margin-top: 0.2em;
   font-weight: bold;
   color: white;
   background-color: #3B82F6;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.4s ease
+  transition: background-color 0.4s ease;
 }
 
 .boton-agendar:hover {
@@ -404,12 +458,16 @@ footer {
   display: flex;
   align-items: center;
   width: 1440px;
-  padding: 0 38px;
-  gap: 14px;
+  /* padding: 0 38px; */
+  padding: 0 2.5em;
+  /* gap: 14px; */
+  gap: 0.7em;
 }
 
 .content-footer img {
-  height: 42px;
-  width: 42px;
+  /* height: 42px;
+  width: 42px; */
+  height: 2.3em;
+  width: 2.3em;
   cursor: pointer;
 }
