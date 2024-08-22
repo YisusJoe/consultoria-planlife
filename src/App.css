@@ -7,7 +7,7 @@
   background-color: #FCF4FF;
 }
 
-.App-header {
+header {
   display: flex;
   justify-content: center;
   height: 60px;
@@ -53,7 +53,7 @@
 }
 
 .Header-nav a:hover {
-  background-color: #b12acf;
+  background-color: #9b1caf;
 }
 
 .App-hero {
@@ -93,6 +93,11 @@
   margin: 0;
 }
 
+.hero-botones {
+  display: flex;
+  gap: 12px;
+}
+
 .App-hero img {
   width: 540px;
   border-radius: 18px;
@@ -111,12 +116,35 @@
   color: white;
   background-color: #0C0A09;
   border-radius: 8px;
+  text-decoration: none;
   transition: background-color 0.4s ease
 }
 
 .Button-contacto:hover {
   cursor: pointer;
   background-color: #80198F;
+}
+
+.Button-calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  height: 56px;
+  width: 220px;
+  color: black;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.4s ease
+}
+
+.Button-calculadora:hover {
+  background-color: #F3D0FE;
+}
+
+.Button-calculadora img {
+  width: 36px;
 }
 
 .App-calculadora {
@@ -240,12 +268,13 @@
 }
 
 .card {
+  width: 322px;
+  height: 355px;
   border-radius: 8px;
 }
 
 .card img {
-  width: 322px;
-  height: 355px;
+  width: inherit;
   border-radius: 8px;
 }
 
@@ -253,6 +282,7 @@
   display: flex;
   justify-content: center;
   height: 640px;
+  font-weight: bold;
   background-color: #F3D0FE;
 }
 
@@ -270,9 +300,116 @@
   padding: 0 122px;
 }
 
-.servicios-tabla {
-  height: 380px;
+.agendar-letras {
+  width: 50%;
+}
+
+.agendar-tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  height: 420px;
   width: 546px;
+  padding: 0 48px;
+  box-sizing: border-box;
   background-color: #FCF4FF;
   border-radius: 16px;
+}
+
+.agendar-tabla h1 {
+  font-size: 36px;
+}
+
+.inputs-agendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.input-first {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.input-first input {
+  height: 38px;
+  padding-left: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.input-second {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-second div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 30%;
+}
+
+.input-second input {
+  height: 38px;
+  padding-left: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.boton-agendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  margin-top: 4px;
+  font-weight: bold;
+  color: white;
+  background-color: #3B82F6;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.4s ease
+}
+
+.boton-agendar:hover {
+  background-color: #2563EB;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 100%;
+  font-weight: bold;
+  background-color: #80198F;
+  color: white;
+  cursor: default;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  padding: 0 38px;
+  gap: 14px;
+}
+
+.content-footer img {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
 }

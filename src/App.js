@@ -1,16 +1,19 @@
 import logo from './images/Logo.png';
 import heroimg from './images/heroimg.jpeg'
+import calculadora from './images/calculadora.png'
 import user from './images/avatar.png'
 import img1 from './images/img1.jpg'
 import img2 from './images/img2.jpg'
 import img3 from './images/img3.jpg'
+import faceimg from './images/facebook.png'
+import instaimg from './images/instagram.png'
 // import imagen1 from './images/img1.jpg'
 // import imagen2 from './images/img2.jpg'
 // import imagen3 from './images/img3.jpg'
 import './App.css';
 
 function App() {
-  const logo = 'https://drive.google.com/thumbnail?id=1EvHBtDhkvyBHwHgWMIz_F71RqAtLduFw';
+  // const logo = 'https://drive.google.com/thumbnail?id=1EvHBtDhkvyBHwHgWMIz_F71RqAtLduFw';
   // const hero = 'https://drive.google.com/thumbnail?id=1HAwpCZjFD6xjV6DXasH5SgyFBCKjBFw8';
   // const hero = 'https://drive.google.com/uc?export=view&id=1HAwpCZjFD6xjV6DXasH5SgyFBCKjBFw8';
   const imagen1 = 'https://drive.google.com/thumbnail?id=1mCPwDEH6UOgcV3foHXVS4pZOjgB0trNZ';
@@ -38,7 +41,13 @@ function App() {
           <div className='hero-letras'>
             <h1>Mereces una mejor pensión, obten una mejor pensión con <span className='resaltar'>PlanLife</span></h1>
             <p>Déjanos ayudarte a planificar tu futuro financiero con nuestras opciones de pensión personalizadas.</p>
-            <div className='Button-contacto'>Contactanos</div>
+            <div className='hero-botones'>
+              <a className='Button-contacto' href='#App-agendar'>Contactanos</a>
+              <a className='Button-calculadora' href='#App-calculadora'>
+                <img src={calculadora}></img>
+                Calculemos
+              </a>
+            </div>
           </div>
           <img src={heroimg} alt='Imagen abuelitos pensionados'></img>
         </div>
@@ -87,13 +96,49 @@ function App() {
       
       <seccion className='App-agendar' id='App-agendar'>
         <div className='content-agendar'>
-          <div className='servicios-letras'>
+          <div className='agendar-letras'>
             <h1>Estaremos gustosos de recibirte en nuestra oficina</h1>
             <p>Av. Nicolás Bravo, Primer Cuadro, Centro, 80000 Culiacán Rosales, Sin.</p>
           </div>
-          <div className='servicios-tabla'></div>
+          <div className='agendar-tabla'>
+            <h1>Agenda tu cita</h1>
+            <div className='inputs-agendar'>
+              <div className='input-first'>
+                <label>Nombre</label>
+                <input></input>
+              </div>
+              <div className='input-second'>
+                <div>
+                  <label>Día</label>
+                  <input></input>
+                </div>
+                <div>
+                  <label>Hora</label>
+                  <input></input>
+                </div>
+                <div>
+                  <label>¿Presencial?</label>
+                  <input></input>
+                </div>
+              </div>
+              
+            </div>
+            <a className='boton-agendar' href=''>Agendar</a>
+          </div>
         </div>
       </seccion>
+
+      <footer>
+        <div className='content-footer'>
+          <p>Siguenos en</p>
+          <a href='https://www.facebook.com' target='_blank'>
+            <img src={faceimg}></img>
+          </a>
+          <a href='https://www.instagram.com' target='_blank'>
+            <img src={instaimg} href='www.instagram.com'></img>
+          </a>
+        </div>
+      </footer>
 
     </div>
   );
