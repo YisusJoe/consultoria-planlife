@@ -1,5 +1,9 @@
-// import logo from './images/Logo.png';
-import hero from './heroimg.jpg'
+import logo from './images/Logo.png';
+import heroimg from './images/heroimg.jpeg'
+import user from './images/avatar.png'
+import img1 from './images/img1.jpg'
+import img2 from './images/img2.jpg'
+import img3 from './images/img3.jpg'
 // import imagen1 from './images/img1.jpg'
 // import imagen2 from './images/img2.jpg'
 // import imagen3 from './images/img3.jpg'
@@ -16,96 +20,80 @@ function App() {
   return (
 
     <div className='App'>
-      
+
       <header className='App-header'>
-        <img src={logo} className='Header-logo' alt='logo'/>
-        <p>Consultoria PlanLife</p>
-        <div className='Header-nav'>
-          <a href='#App-calcular'>Calcular Pension</a>
-          <a href='#App-servicios'>Servicios</a>
-          <a href='#App-seccion'>Nosotros</a>
-          <a className='Nav-contacto' href='#App-localizacion'>Contactanos</a>
+        <div className='content-header'>
+          <img src={logo} className='Header-logo' alt='logo'/>
+          <p>Consultoría PlanLife</p>
+          <div className='Header-nav'>
+            <a href='#App-calculadora'>Calcular Pensión</a>
+            <a href='#App-servicios'>Servicios</a>
+            <a className='Nav-contacto' href='#App-agendar'>Contactanos</a>
+          </div>
         </div>
       </header>
 
       <seccion className='App-hero'>
-        <div className='Hero-inicio'>
-          <h1>Obtén la mejor opción de pensión con <span className='resaltar'>PlanLife</span></h1>
-          <p>Déjanos ayudarte a planificar tu futuro financiero con nuestras opciones de pensión personalizadas.</p>
-          <div className='Inicio-button'>Contactanos</div>
+        <div className='content-hero'>
+          <div className='hero-letras'>
+            <h1>Mereces una mejor pensión, obten una mejor pensión con <span className='resaltar'>PlanLife</span></h1>
+            <p>Déjanos ayudarte a planificar tu futuro financiero con nuestras opciones de pensión personalizadas.</p>
+            <div className='Button-contacto'>Contactanos</div>
+          </div>
+          <img src={heroimg} alt='Imagen abuelitos pensionados'></img>
         </div>
-        <img src={hero} alt='Imagen abuelitos pensionados'></img>
       </seccion>
 
-      <section className='App-calcular' id='App-calcular'>
-        <div className='Calcular-input'>
-          <h1>Vamos a calcular tu pensión sin PlanLife</h1>
-          <p>Fecha último trabajo</p>
-          <input></input>
-          <p>Sueldo mensual</p>
-          <input></input>
-          <p>Semanas cotizadas</p>
-          <input></input>
-          <p>Edad de pension deseada</p>
-          <input></input>
-          <div className='Inicio-button'>Calcular</div>
-          {/* <button>Calcular</button> */}
-        </div>
-
-        <div className='Calcular-output'>
-          <h3>Aqui ira el calculo de pensión</h3>
-        </div>
-      </section>
+      <seccion className='App-calculadora' id='App-calculadora'>
+        <div className='content-calculadora'>
+          <div className='calculadora-letras'>
+            <h1>Calculemos tu pensión sin <span className='resaltar'>Planlife</span></h1>
+            <p>Ingresa los siguientes datos a nuestra calculadora</p>
+          </div>
+          <div className='calculadora-inputs'>
+            <div>
+              <input placeholder="Nombre"></input>
+              <input placeholder="Nacimiento"></input>
+              <input placeholder="Edad deseada para pensionarte"></input>
+            </div>
+            <div>
+              <input placeholder="Semanas cotizados"></input>
+              <input placeholder="Salario Mensual"></input>
+            </div>
+          </div>
+          <div className='calculadora-botones'>
+            <div className='Button-calcular'>Calcular</div>
+            <div className='Button-buscar'>¿No conoces estos datos?</div>
+          </div>
+        </div>  
+      </seccion>
 
       <seccion className='App-servicios' id='App-servicios'>
-        <h1>Servicios</h1>
-        <div className='Servicios-cards'>
-          <div className='Card'>
-            <img src={imagen1} alt='imagengen'></img>
-            <h3>Asesoramiento Financiero</h3>
-            <p>Brindamos asesoramiento personalizado para la planificación financiera y la gestión de inversiones. Nuestro enfoque se centra en entender las necesidades individuales y desarrollar estrategias adaptadas a cada cliente.</p>
-          </div>
-          <div className='Card'>
-            <img src={imagen2} alt='imagengen'></img>
-            <h3>Planificación de Pensiones</h3>
-            <p>Ofrecemos servicios especializados en la planificación de pensiones, ayudando a nuestros clientes a asegurar un futuro financiero estable y seguro para su jubilación.</p>
-          </div>
-          <div className='Card'>
-            <img src={imagen3} alt='imagengen'></img>
-            <h3>Gestión de Activos</h3>
-            <p>Gestionamos eficazmente los activos de nuestros clientes, optimizando sus inversiones y asegurando un crecimiento sostenible a largo plazo.</p>
+        <div className='content-servicios'>
+          <h1>Nos <scan className='resaltar'>preocupamos</scan> por brindarte</h1>
+          <div className='cards-servicios'>
+            <div className='card'>
+              <img src={img1}></img>
+            </div>
+            <div className='card'>
+              <img src={img2}></img>
+            </div>
+            <div className='card'>
+              <img src={img3}></img>
+            </div>
           </div>
         </div>
       </seccion>
-
-      <seccion className='App-seccion' id='App-seccion'>
-        <div className='Seccion-container'>
-          <h1>NOSOTROS</h1>
-          <p>Somos un equipo dedicado a brindar soluciones integrales en planificación financiera y estrategias de pensiones. Nuestro compromiso es ayudar a nuestros clientes a alcanzar sus metas financieras y asegurar un retiro cómodo y tranquilo.</p>
+      
+      <seccion className='App-agendar' id='App-agendar'>
+        <div className='content-agendar'>
+          <div className='servicios-letras'>
+            <h1>Estaremos gustosos de recibirte en nuestra oficina</h1>
+            <p>Av. Nicolás Bravo, Primer Cuadro, Centro, 80000 Culiacán Rosales, Sin.</p>
+          </div>
+          <div className='servicios-tabla'></div>
         </div>
-        <div className='img'>
-          Aqui ira la imagen de nosotros
-        </div>
-        {/* <img src={logohero} alt='Imagen abuelitos pensionados'></img> */}
       </seccion>
-
-      <seccion className='App-localizacion' id='App-localizacion'>
-        <h1>CONTACTO</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39733.33333333333!2d-0.1418907!3d51.5013645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cb8783e3c1%3A0x64b9de8c6b23304!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v1616161616161"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          aria-hidden="false"
-          tabIndex="0"
-        ></iframe>
-      </seccion>
-
-      <footer>
-        <p>Hecho por yisusjoe.mx@gmail.com</p>
-      </footer>
 
     </div>
   );

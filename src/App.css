@@ -1,34 +1,37 @@
-/* .App {
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-} */
-
-h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  font-size: 18px;
+  /* font-size: 1.3vw; */
+  background-color: #FCF4FF;
 }
 
 .App-header {
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 60px;
-  padding: 0 2vw;
-  font-size: 18px;
+  width: 100%;
   font-weight: bold;
-  background-color: #ED1566;
+  background-color: #80198F;
   color: white;
+  cursor: default;
 }
 
-.App-header p {
-  pointer-events: none;
+.content-header {
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  /* padding: 0 2vw; */
+  padding: 0 38px;
+  gap: 14px;
+  /* margin: 0 auto; */
+  /* font-size: 2vh; */
 }
 
 .Header-logo {
-  height: 40px;
-  width: 40px;
-  /* padding-right: 4px; */
-  pointer-events: none;
+  height: 42px;
+  width: 42px;
 }
 
 .Header-nav {
@@ -42,368 +45,234 @@ h1, h2, h3, p {
   height: 40px;
   width: auto;
   padding: 0 2vw;
-  /* border-radius: 4px; */
   color: white;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 8px;
 }
 
 .Header-nav a:hover {
-  background-color: #9c1043;
-}
-
-.Nav-contacto {
-  background-color: gainsboro;
-  margin-left: 1vw;
-  border-radius: 4px;
-  color: #1E2D3B !important;
-}
-
-.Nav-contacto:hover {
-  color: gainsboro !important;
-}
-
-.App-header p {
-  padding-left: 15px;
+  background-color: #b12acf;
 }
 
 .App-hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
+  font-weight: bold;
+  /* gap: 20px; */
+  /* padding: 0 120px; */
   height: calc(100vh - 60px);
   /* padding: 48px 0; */
   /* border: 1px solid red; */
+  cursor: default;
+}
+
+.content-hero {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 1440px;
+  padding: 0 122px;
+}
+
+.hero-letras {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.hero-letras h1 {
+  font-size: 62px;
+  margin: 0;
+}
+
+.hero-letras p {
+  font-size: 18px;
+  margin: 0;
 }
 
 .App-hero img {
-  height: 100%; 
-  /* float: right;
-  animation-name: aparecerDesdeDerecha;
-  animation-duration: .8s;
-  animation-fill-mode: forwards; */
-  animation: fadeIn 0.1s ease-in-out forwards;
+  width: 540px;
+  border-radius: 18px;
 }
 
 .resaltar {
-  color: #ED1566;
+  color: #80198F;
 }
 
-.Hero-inicio {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  width: 60%;
-  padding: 0 6vw;
-  animation: fadeIn 1.3s ease-in-out forwards;
-  /* border: solid blue 1px; */
-}
-
-.Hero-inicio h1 {
-  font-size: 48px;
-  font-weight: bolder;
-  /* padding: 18px 0; */
-  margin: 0;
-  pointer-events: none;
-}
-
-.Hero-inicio p {
-  font-size: 16px;
-  margin: 0;
-  pointer-events: none;
-}
-
-.Inicio-button {
+.Button-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 28px; */
-  width: 10vw;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 5px;
+  height: 56px;
+  width: 220px;
   color: white;
-  background-color: black;
+  background-color: #0C0A09;
+  border-radius: 8px;
   transition: background-color 0.4s ease
 }
 
-.Inicio-button:hover {
+.Button-contacto:hover {
   cursor: pointer;
-  background-color: gray;
+  background-color: #80198F;
 }
 
-.App-calcular {
+.App-calculadora {
   display: flex;
-  align-items: center;
-  /* height: calc(100vh - 60px); */
-  padding: 4vw 8vw;
-  background-color: rgb(245, 245, 245);
-  /* background-color: white; */
+  justify-content: center;
+  height: 640px;
+  background-color: #F3D0FE;
 }
 
-.Calcular-input {
+.content-calculadora {
   display: flex;
-  gap: 1vw;
-  width: 50%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 64px; */
+  width: 1440px;
+  padding: 0 122px;
 }
 
-.Calcular-input p {
+.calculadora-letras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+
+.calculadora-letras h1 {
+  font-size: 32px;
   margin: 0;
 }
 
-.Calcular-input input {
-  height: 24px;
-  width: 80%;
+.calculadora-letras p {
+  font-size: 18px;
+  margin: 0;
 }
 
-.Calcular-output {
+.calculadora-inputs {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+}
+
+.calculadora-inputs input {
+  height: 40px;
+  width: 394px;
+  padding-left: 16px;
+  margin: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.calculadora-inputs input::placeholder {
+  color: #0C0A09;
+  border-radius: 8px;
+}
+
+.calculadora-botones {
+  display: flex;
+  gap: 48px;
+  padding: 32px;
+}
+
+.calculadora-botones div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 50%;
+  height: 58px;
+  width: 412px;
+  font-weight: bold;
   color: white;
   border-radius: 8px;
-  background-color: #9c1043;
-  /* color: #1E2D3B; */
+}
+
+.Button-calcular {
+  background-color: #22C55E;
+}
+
+.Button-calcular:hover {
+  background-color: #16A34A;
+  cursor: pointer;
+}
+
+.Button-buscar {
+  background-color: #EAB308;
+}
+
+.Button-buscar:hover {
+  background-color: #CA8A04;
+  cursor: pointer;
 }
 
 .App-servicios {
   display: flex;
+  justify-content: center;
+  height: 640px;
+  background-color: #FCF4FF;
+}
+
+.App-servicios h1 { 
+  font-size: 32px;
+  margin: 0px;
+}
+
+.content-servicios {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
-  padding: 2vw 6vw;
-  /* background-color: #9c1043; */
+  gap: 32px;
+  width: 1440px;
+  padding: 0 122px;
 }
 
-.Servicios-cards {
+.cards-servicios {
   display: flex;
-  justify-content: center;
-  gap: 4vw;
-  width: 100%;
-  padding: 24px;
-  /* background-color: aquamarine; */
+  gap: 64px;
 }
 
-.Card {
-  /* height: 28vw; */
-  width: 224px;
-  padding: 24px;
-  border-radius: 12px;
-  /* text-align: justify; */
-  background-color: rgb(245, 245, 245);
-  /* border: 1px solid red; */
-}
-
-.Card img {
-  width: 100%;
-}
-
-.Card h3 {
-  padding: 14px 0;
-  font-size: 16px;
-}
-
-.Card p {
-  font-size: 14px;
-}
-
-.App-seccion {
-  display: flex;
-  height: 80vh;
-  gap: 32px; 
-  padding: 2vw 6vw;
-  font-size: 24px;
-}
-
-.Seccion-container {
-  width: 50%;
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-  color: white;
-  border-radius: 8px;
-  background-color: #1E2D3B;
-}
-
-.App-localizacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 400px;
-  padding: 2vw 6vw;
-  /* background-color: #ED1566; */
-}
-
-.App-localizacion h1 {
-  padding: 18px 0;
-}
-
-.App-localizacion iframe {
+.card {
   border-radius: 8px;
 }
 
-footer {
-  padding: 2vw;
-  font-weight: bold;
-  color: white;
-  background-color: #ED1566;
+.card img {
+  width: 322px;
+  height: 355px;
+  border-radius: 8px;
 }
 
-/*
-.Card img {
-  width: 100%;
+.App-agendar {
+  display: flex;
+  justify-content: center;
+  height: 640px;
+  background-color: #F3D0FE;
 }
 
-
-.Card h3, .Card p {
-  margin: 0;
-  padding: 0 24px;
+.App-agendar h1 { 
+  font-size: 48px;
+  margin: 0px;
 }
 
-.Card h3 {
-  padding: 14px 24px;
-} */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.content-agendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 1440px;
+  padding: 0 122px;
 }
 
-@keyframes aparecerDesdeDerecha {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-@media (max-width: 600px) {
-  /* Estilos para pantallas pequeñas */
-  body {
-    font-size: 4px;
-  }
-
-  .App-header {
-    padding: 4px 0;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .App-header img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .App-header p {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .Header-nav { 
-    display: none;
-  }
-
-  .App-hero {
-    /* background-color: #1E2D3B; */
-    height: calc(100vh - 80px);
-    width: 100%;
-  } 
-
-  .App-hero h1 {
-    text-align: center;
-    font-size: 42px;
-  }
-
-  .App-hero p {
-    text-align: center;
-  }
-
-  .App-hero img {
-    display: none;
-  }
-
-  .Hero-inicio {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .Inicio-button {
-    height: 30px;
-    width: 200px;
-    font-size: 16px;
-  }
-
-  .App-calcular {
-    text-align: center;
-    font-size: 12px;
-    /* padding: 20px 0; */
-  }
-
-  .Calcular-input {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%
-  }
-
-  .Calcular-output {
-    display: none;
-  }
-
-  .App-servicios {
-    font-size: 20px;
-  }
-
-  .Servicios-cards {
-    flex-wrap: wrap;
-  }
-
-  .Card h3, .Card p {
-    display: none;
-  }
-
-  .App-seccion {
-    display: center;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .Seccion-container {
-    width: 100%;
-  }
-
-  .img {
-    display: none;
-  }
-
-  .App-localizacion h1 {
-    font-size: 20px;
-  }
-
-  footer {
-    font-size: 12px;
-    text-align: center;
-  }
+.servicios-tabla {
+  height: 380px;
+  width: 546px;
+  background-color: #FCF4FF;
+  border-radius: 16px;
 }
