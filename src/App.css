@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* font-size: 18px; */
+  /* font-size: 19px; */
   font-size: 1.3vw;
   background-color: #FCF4FF;
 }
@@ -12,6 +12,7 @@ header {
   justify-content: center;
   height: 60px;
   width: 100%;
+  font-size: 0.95em;
   font-weight: bold;
   background-color: #80198F;
   color: white;
@@ -470,4 +471,104 @@ footer {
   height: 2.3em;
   width: 2.3em;
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .App {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 426px) {
+  /* Estilos para pantallas pequeñas */
+  .App {
+    font-size: 3.2vw;
+  }
+
+  .Header-nav { 
+    display: none;
+  }
+
+  .App-hero {
+    height: calc(100vh - 60px);
+    width: 100%;
+  } 
+
+  .App-hero h1 {
+    text-align: center;
+    font-size: 2.7em;
+  }
+
+  .App-hero p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .App-hero img {
+    display: none;
+  }
+
+  .Hero-inicio {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-botones {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .content-calculadora {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .Button-calculadora img {
+    display: block;
+  }
+  
+  .calculadora-letras {
+    padding-bottom: 0.8em;
+  }
+
+  .calculadora-letras h1 {
+    font-size: 2em;
+  }
+
+  .calculadora-inputs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .calculadora-botones {
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 0;
+  }
+
+  .Calcular-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%
+  }
+
+  .App-servicios h1 {
+    text-align: center;
+  }
+
+  .App-agendar {
+    display: none;
+  }
+
+  .cards-servicios {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+  }
 }

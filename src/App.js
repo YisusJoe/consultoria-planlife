@@ -45,7 +45,7 @@ function App() {
               <a className='Button-contacto' href='#App-agendar'>Contactanos</a>
               <a className='Button-calculadora' href='#App-calculadora'>
                 <img src={calculadora}></img>
-                Calculemos
+                <p>Calculemos</p>
               </a>
             </div>
           </div>
